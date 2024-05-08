@@ -1,0 +1,230 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 2em;
+}
+/* credit card banner */
+.credit-card-add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* telegram channel */
+.telegram-channel {
+  text-align: center;
+}
+.telegram-channel a {
+  background: #009de1;
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 1rem;
+  padding: 0.1em;
+}
+.telegram-channel a i {
+  font-size: 2rem;
+}
+/* telegram ends here */
+
+/* momix store starts here -- */
+
+*::-webkit-scrollbar{
+  width: 0.31rem;
+  height:0.1rem;
+}
+
+*::-webkit-scrollbar-track{
+  background-color: transparents;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: red;
+  border-radius: 20rem;
+}
+
+/*  momix store ends here */
+
+main {
+  padding: 20px;
+}
+
+.search {
+  margin-bottom: 20px;
+  margin: auto;
+  max-width: 1000px;
+  width: 98%;
+}
+
+.search h2 {
+  margin-bottom: 10px;
+}
+
+#search-bar {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ddd;
+}
+
+.movie-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.movie-card {
+  max-width: 230px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 8px;
+ 
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.movie-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.movie-card button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ 
+}
+
+.movie-card button a{
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+.search button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* banner ad */
+#ad-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  text-align: center;
+  /* padding-top: 20%; */
+  color: white;
+}
+#ad-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#ad-close-btn {
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+  border: 2px solid red;
+  z-index: 1000;
+  position: fixed;
+}
+
+.backred{
+    background-color: red;
+    color: white !important;
+}
+
+@media  (max-width:600px) {
+    header {
+      padding:5px ;
+      }
+    .telegram-channel a i ,.telegram-channel a{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .search {
+        margin-bottom: 20px;
+        margin: auto;
+        max-width: 100vw;
+        width: 100%;
+      }
+      #search-bar {
+        width: 90%;
+      }
+      #search-btn{
+        margin: auto;
+        margin-top: 5px;
+      }
+      .movie-cards {
+        display: block;
+        margin: auto;
+        width: 230px;
+        padding: 0;
+      }
+      .movie-card{
+        padding-bottom: 10px;
+        
+      }
+      .movie-card button{
+    width: 90%;
+    margin-left: 0.5rem;
+      }
+      #ad-container{
+        min-height: 100vh;
+      }
+      #ad-container img {
+        margin-top:40% ;
+      }
+      .credit-card-add{
+  width: 100vw;
+      }
+}
